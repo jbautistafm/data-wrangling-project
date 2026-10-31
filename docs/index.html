@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¿Cuánto te frena el calor?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Familjen+Grotesk:wght@400;500;700&family=Martian+Mono:wght@400;600&display=swap">
+<style>
+/* layout: vista de camara termica. cabecera a sangre, hoja de parciales a la izquierda, mancha de calor con el indice a la derecha, luego la pista de atletismo yo vs elite */
+:root{
+  color-scheme:dark;
+  --night:#0c0a16; --panel:#15122a; --ink:#f4efe6; --dim:#a39cb8; --grid:#2b2645;
+  --t1:#4b2a9c; --t2:#a3238f; --t3:#e8432e; --t4:#f99b1c; --t5:#ffe761; --hot:#fff8dc;
+  --display:"Big Shoulders Display","Impact","Arial Narrow",sans-serif;
+  --body:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --mono:"Martian Mono",ui-monospace,"SFMono-Regular",monospace;
+}
+*{box-sizing:border-box}
+body{background:var(--night);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+.band{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.inner{max-width:1120px;margin:0 auto}
+
+/* cabecera termica */
+.hero{position:relative;overflow:hidden;padding-block:40px 34px;border-bottom:1px solid var(--grid)}
+.hero::before{content:"";position:absolute;inset:-40% -10% auto auto;width:70%;height:180%;
+  background:radial-gradient(closest-side,var(--t5) 0%,var(--t4) 22%,var(--t3) 42%,var(--t2) 62%,var(--t1) 80%,transparent 100%);
+  opacity:.55;filter:blur(30px);pointer-events:none}
+.hero .inner{position:relative;display:flex;flex-direction:column;gap:14px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(52px,10vw,124px);line-height:.86;margin:0;letter-spacing:-.01em;max-width:11ch;text-wrap:balance}
+h1 em{font-style:normal;color:var(--t4)}
+.lead{max-width:58ch;margin:0;font-size:18px;color:var(--ink)}
+.legend{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;color:var(--dim)}
+.legend .ramp{width:180px;height:8px;border-radius:1px;background:linear-gradient(90deg,var(--t1),var(--t2),var(--t3),var(--t4),var(--t5))}
+
+/* cuerpo */
+main{padding-block:32px 56px}
+main .inner{display:flex;flex-direction:column;gap:40px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:32px;align-items:start}
+@media (max-width:860px){.split{grid-template-columns:minmax(0,1fr)}}
+h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:34px;line-height:1;margin:0;letter-spacing:.01em}
+.sub{color:var(--dim);margin:6px 0 0;max-width:56ch;font-size:15px}
+
+/* hoja de parciales */
+.sheet{display:flex;flex-direction:column;gap:14px;min-width:0}
+.sheet-head{display:flex;justify-content:space-between;align-items:end;gap:12px;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--grid);color:var(--dim);padding:4px 8px}
+.chip.mine{border-color:var(--t4);color:var(--t4)}
+.splits{border-top:2px solid var(--ink)}
+.srow{display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1fr) 36px;align-items:center;border-bottom:1px dashed var(--grid)}
+.srow.h{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);padding-block:8px;border-bottom:1px solid var(--grid)}
+.srow .n{font-family:var(--mono);font-size:12px;color:var(--dim);display:flex;align-items:center;gap:6px}
+.srow .n i{width:8px;height:8px;display:inline-block;background:var(--grid)}
+.srow input{width:100%;font-family:var(--mono);font-size:15px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid transparent;padding:10px 6px;font-variant-numeric:tabular-nums}
+.srow input::placeholder{color:#5c5577}
+.srow input:focus{outline:none;border-bottom-color:var(--t4);background:rgba(249,155,28,.06)}
+.srow input.bad{border-bottom-color:var(--t3);color:var(--t3)}
+.del{background:none;border:0;color:var(--dim);font-size:18px;cursor:pointer;padding:6px;line-height:1}
+.del:hover,.del:focus-visible{color:var(--t3);outline:none}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:12px 16px;cursor:pointer;background:transparent;color:var(--ink);border:1px solid var(--grid)}
+.btn:hover{border-color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--t4);outline-offset:2px}
+.btn.go{background:var(--t4);border-color:var(--t4);color:var(--night);font-weight:600}
+.btn.go:hover{background:var(--t5);border-color:var(--t5)}
+.hint{font-size:14px;color:var(--dim);margin:0}
+details summary{cursor:pointer;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--t4)}
+details summary:focus-visible{outline:2px solid var(--t4);outline-offset:2px}
+textarea{width:100%;min-height:110px;margin-top:10px;font-family:var(--mono);font-size:13px;color:var(--ink);background:var(--panel);border:1px solid var(--grid);padding:10px}
+textarea:focus{outline:1px solid var(--t4)}
+code{font-family:var(--mono);font-size:13px;color:var(--t5)}
+
+/* resultado: mancha de calor */
+.result{display:flex;flex-direction:column;gap:18px;min-width:0}
+.scope{position:relative;aspect-ratio:4/3;max-width:100%;background:var(--panel);border:1px solid var(--grid);overflow:hidden;display:grid;place-items:center}
+.scope .blob{position:absolute;width:var(--size,40%);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(closest-side,var(--hot) 0%,var(--c5) 18%,var(--c4) 38%,var(--c3) 58%,var(--c2) 78%,transparent 100%);
+  filter:blur(18px);opacity:.95}
+@media (prefers-reduced-motion:no-preference){.scope .blob{transition:width .6s ease}}
+.scope .cross{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(var(--grid),var(--grid)) center/1px 100% no-repeat,linear-gradient(var(--grid),var(--grid)) center/100% 1px no-repeat;opacity:.6}
+.scope .corner{position:absolute;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.scope .tl{top:10px;left:12px}.scope .tr{top:10px;right:12px}.scope .bl{bottom:10px;left:12px}.scope .br{bottom:10px;right:12px}
+.readout{position:relative;text-align:center;display:flex;flex-direction:column;align-items:center}
+.readout .num{font-family:var(--display);font-weight:900;font-size:clamp(120px,22vw,200px);line-height:.8;color:var(--ink);text-shadow:0 2px 24px rgba(12,10,22,.6)}
+.readout .of{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--ink);opacity:.85;margin-top:8px;text-transform:uppercase}
+.readout .name{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:26px;margin-top:6px;text-shadow:0 1px 12px rgba(12,10,22,.8)}
+.figures{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--ink)}
+.fig{padding:10px 10px 0 0;min-width:0}
+.fig+.fig{padding-left:12px;border-left:1px solid var(--grid)}
+.fig b{display:block;font-family:var(--mono);font-weight:600;font-size:20px;font-variant-numeric:tabular-nums}
+.fig span{font-size:13px;color:var(--dim);line-height:1.3;display:block}
+.verdict{margin:0;max-width:60ch}
+.warn{margin:0;border-left:3px solid var(--t4);padding:8px 12px;background:rgba(249,155,28,.08);font-size:14px}
+.chart{overflow-x:auto}
+svg{display:block;width:100%;height:auto}
+
+/* pista: yo vs elite */
+.track-sec{display:flex;flex-direction:column;gap:20px;border-top:1px solid var(--grid);padding-top:36px}
+.track-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px}
+@media (max-width:860px){.track-head{grid-template-columns:minmax(0,1fr)}}
+.elite-card{background:var(--panel);border:1px solid var(--grid);padding:18px;display:flex;flex-direction:column;gap:10px}
+.elite-card .big{display:flex;gap:20px;flex-wrap:wrap}
+.elite-card .big div{display:flex;flex-direction:column}
+.elite-card .big b{font-family:var(--display);font-weight:900;font-size:48px;line-height:1}
+.elite-card .big span{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.elite-card p{margin:0;font-size:15px}
+.track{position:relative;background:#7a2a22;border-radius:4px;padding:6px 0;overflow:hidden}
+.lane{position:relative;height:46px;border-top:2px solid rgba(255,255,255,.75)}
+.lane:last-child{border-bottom:2px solid rgba(255,255,255,.75)}
+.lane .ln{position:absolute;left:8px;top:50%;transform:translateY(-50%);font-family:var(--display);font-weight:900;font-size:26px;color:rgba(255,255,255,.85)}
+.lane .runner{position:absolute;top:50%;transform:translate(-50%,-50%);display:flex;align-items:center;gap:8px;white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){.lane .runner{transition:left .7s ease}}
+.lane .dot{width:18px;height:18px;border-radius:50%;border:2px solid var(--night);flex:none}
+.lane .tag{font-family:var(--mono);font-size:11px;background:var(--night);color:var(--ink);padding:3px 6px}
+.axis{position:relative;height:30px;font-family:var(--mono);font-size:10px;color:var(--dim)}
+.axis span{position:absolute;transform:translateX(-50%);top:6px}
+.axis-label{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);text-align:right}
+.am-i{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;background:var(--panel);border:1px solid var(--grid);padding:20px}
+@media (max-width:560px){.am-i{grid-template-columns:minmax(0,1fr)}}
+.stamp{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:28px;line-height:.95;padding:10px 14px;border:3px solid currentColor;transform:rotate(-3deg);text-align:center;max-width:220px}
+.am-i p{margin:0}
+.am-i .small{font-size:14px;color:var(--dim);margin-top:8px}
+
+footer.method{border-top:1px solid var(--grid);padding-top:28px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;font-size:14px;color:var(--dim)}
+@media (max-width:860px){footer.method{grid-template-columns:minmax(0,1fr)}}
+footer.method h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:22px;color:var(--ink);margin:0 0 8px}
+footer.method p{margin:0 0 10px;max-width:62ch}
+.bands{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;margin:6px 0 12px}
+.bands div{padding:8px 6px;font-family:var(--mono);font-size:11px;color:var(--night);font-weight:600}
+.bands div small{display:block;font-weight:400;font-size:10px}
+.sr{position:absolute;left:-9999px}
+</style>
+</head>
+<body>
+
+<header class="hero band">
+  <div class="inner">
+    <span class="kicker">Proyecto de datos · Strava + Open-Meteo + Wikipedia</span>
+    <h1>¿Cuánto te frena el <em>calor</em>?</h1>
+    <p class="lead">Mete tus carreras con la temperatura que hacía y tu ritmo. Te doy tu índice de sensibilidad al calor del 1 al 5 y te comparo con los ganadores de las maratones de Berlín y Londres. ¿Aguantas el calor como un élite?</p>
+    <div class="legend" aria-hidden="true"><span>1 frío</span><span class="ramp"></span><span>5 te derrite</span></div>
+  </div>
+</header>
+
+<main class="band">
+  <div class="inner">
+    <div class="split">
+      <section class="sheet" aria-labelledby="t-sheet">
+        <div class="sheet-head">
+          <div>
+            <h2 id="t-sheet">Hoja de parciales</h2>
+            <p class="sub">Una línea por entreno (no competiciones). La temperatura la ves en Strava, en el detalle de cada actividad. El ritmo, como 5:10.</p>
+          </div>
+          <span class="chip" id="sample-tag">Datos de ejemplo</span>
+        </div>
+        <div class="splits" role="table" aria-label="Tus carreras">
+          <div class="srow h" role="row"><span role="columnheader">#</span><span role="columnheader">Temp °C</span><span role="columnheader">Ritmo /km</span><span role="columnheader"><span class="sr">Borrar</span></span></div>
+          <div id="rows"></div>
+        </div>
+        <div class="actions">
+          <button class="btn" id="add" type="button">+ Carrera</button>
+          <button class="btn" id="clear" type="button">Vaciar</button>
+          <button class="btn go" id="calc" type="button">Calcular mi índice</button>
+        </div>
+        <details>
+          <summary>Pegar desde Excel</summary>
+          <p class="hint" style="margin-top:8px">Una carrera por línea: temperatura y ritmo separados por espacio, punto y coma o tabulador, por ejemplo <code>18 5:12</code>.</p>
+          <label for="paste" class="sr">Carreras pegadas</label>
+          <textarea id="paste" placeholder="12 5:05&#10;24 5:21&#10;8 5:09"></textarea>
+          <div class="actions" style="margin-top:8px;align-items:center"><button class="btn" id="load" type="button">Cargar</button><span class="hint" id="paste-msg"></span></div>
+        </details>
+      </section>
+
+      <section class="result" aria-labelledby="t-res" aria-live="polite">
+        <h2 id="t-res" class="sr">Tu resultado</h2>
+        <div class="scope" id="scope">
+          <div class="blob" id="blob"></div>
+          <div class="cross" aria-hidden="true"></div>
+          <span class="corner tl">Índice de calor</span><span class="corner tr" id="corner-n">n = 0</span>
+          <span class="corner bl" id="corner-min">–</span><span class="corner br" id="corner-max">–</span>
+          <div class="readout">
+            <span class="num" id="idx">–</span>
+            <span class="of">de 5</span>
+            <span class="name" id="idx-name">Mete tus carreras</span>
+          </div>
+        </div>
+        <div class="figures">
+          <div class="fig"><b id="s-loss">–</b><span>s/km que pierdes cada +5 °C</span></div>
+          <div class="fig"><b id="s-r">–</b><span>correlación temperatura-ritmo</span></div>
+          <div class="fig"><b id="s-best">–</b><span>tu mejor temperatura</span></div>
+        </div>
+        <p class="verdict" id="verdict"></p>
+        <p class="warn" id="warn" hidden></p>
+        <div class="chart"><svg id="plot" viewBox="0 0 540 300" role="img" aria-label="Gráfico de tus carreras: temperatura en horizontal, ritmo en vertical"></svg></div>
+      </section>
+    </div>
+
+    <section class="track-sec" aria-labelledby="t-elite">
+      <div class="track-head">
+        <div>
+          <h2 id="t-elite">¿Eres élite ante el calor?</h2>
+          <p class="sub">Comparo lo que te frena el calor con dos referencias de mi estudio: un corredor popular (mis 293 entrenos en Madrid) y los ganadores de las maratones de Berlín y Londres.</p>
+        </div>
+        <div class="elite-card">
+          <div class="big">
+            <div><b style="color:var(--t1);filter:brightness(1.8)">1</b><span>índice élite</span></div>
+            <div><b>−0,3</b><span>s/km cada +5 °C</span></div>
+            <div><b>195</b><span>carreras · 1974-2026</span></div>
+          </div>
+          <p>Así le afecta el calor a la élite: <strong>prácticamente nada</strong>. Con días de 7 a 23 °C, y quitando que los tiempos han bajado con los años, su ritmo no cambia con la temperatura (correlación −0,03). Un corredor popular como yo pierde 4,5 s/km por cada 5 °C (índice 2).</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="track" id="track" aria-label="Pista: cuántos segundos por km pierde cada uno por cada 5 grados más">
+          <div class="lane"><span class="ln">1</span><div class="runner" id="r-elite"><span class="dot" style="background:var(--t1)"></span><span class="tag">Élite −0,3</span></div></div>
+          <div class="lane"><span class="ln">2</span><div class="runner" id="r-pop"><span class="dot" style="background:var(--t3)"></span><span class="tag">Popular +4,5</span></div></div>
+          <div class="lane"><span class="ln">3</span><div class="runner" id="r-you"><span class="dot" id="you-dot" style="background:var(--t4)"></span><span class="tag" id="you-tag">Tú</span></div></div>
+        </div>
+        <div class="axis" id="axis" aria-hidden="true"></div>
+        <div class="axis-label">s/km que se pierden por cada 5 °C más · a la derecha, más te frena el calor</div>
+      </div>
+
+      <div class="am-i">
+        <div class="stamp" id="stamp" style="color:var(--dim)">Sin datos</div>
+        <div>
+          <p id="am-text">Mete tus carreras para ver dónde te colocas.</p>
+          <p class="small">Ser élite ante el calor no es ser élite corriendo: desde 2015 los ganadores van a 2:55/km (hombres) y 3:17/km (mujeres). Aquí solo mido cuánto cambia tu ritmo con la temperatura.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="method">
+      <div>
+        <h3>Cómo se calcula</h3>
+        <p>Calculo la correlación de Pearson entre la temperatura y tu ritmo en segundos por km. Si sale positiva, con más calor vas más lento. La paso a una nota:</p>
+        <div class="bands">
+          <div style="background:var(--t1);color:var(--ink)">1<small>&lt; 0,1</small></div>
+          <div style="background:var(--t2);color:var(--ink)">2<small>0,1-0,3</small></div>
+          <div style="background:var(--t3)">3<small>0,3-0,5</small></div>
+          <div style="background:var(--t4)">4<small>0,5-0,7</small></div>
+          <div style="background:var(--t5)">5<small>≥ 0,7</small></div>
+        </div>
+        <p>Los segundos por cada 5 °C salen de la pendiente de la recta que mejor se ajusta a tus puntos, multiplicada por 5. El índice mide lo constante que es el efecto del calor y los segundos miden lo grande que es; por eso enseño los dos.</p>
+      </div>
+      <div>
+        <h3>De dónde salen los datos</h3>
+        <p>Corredor popular: 293 entrenos míos de la API de Strava, con el clima de cada hora de la API histórica de Open-Meteo.</p>
+        <p>Élite: ganadores y ganadoras de las maratones de Berlín y Londres sacados por scraping de Wikipedia, con la temperatura media de 9 a 11 h del día de la carrera. A cada tiempo le quito la mediana de las 9 ediciones de alrededor para que no pese la época.</p>
+        <p>Con menos de 8 carreras, o con temperaturas muy parecidas, el resultado no es fiable. El ritmo también depende del tipo de entreno, el cansancio o el desnivel.</p>
+      </div>
+    </footer>
+  </div>
+</main>
+
+<script>
+const ELITE = {loss:-0.3, idx:1};
+const POP = {loss:4.5, idx:2};
+const EXAMPLE = [[4,"5:10"],[7,"5:06"],[10,"5:04"],[12,"5:07"],[14,"5:01"],[17,"5:09"],[19,"5:06"],[22,"5:12"],[25,"5:08"],[28,"5:13"],[31,"5:12"]];
+const NAMES = ["","No te afecta","Te afecta poco","Te afecta a medias","Te afecta bastante","Te derrite"];
+const T = ["","--t1","--t2","--t3","--t4","--t5"];
+const rowsEl = document.getElementById("rows");
+let isSample = true, uid = 0;
+
+function parsePace(s){
+  s = String(s).trim().replace(",", ".");
+  const m = s.match(/^(\d{1,2})[:'.](\d{1,2})$/);
+  if(m){ const sec = +m[2]; return sec < 60 ? (+m[1])*60 + sec : NaN; }
+  if(/^\d{3}(\.\d+)?$/.test(s)) return +s;
+  return NaN;
+}
+function fmtPace(sec){ let m = Math.floor(sec/60), s = Math.round(sec%60); if(s===60){m++;s=0;} return m+":"+String(s).padStart(2,"0"); }
+function parseTemp(s){ s = String(s).trim().replace(",", "."); if(s==="") return NaN; const v = +s; return (v>=-30 && v<=50) ? v : NaN; }
+function num(v,d){ return (v>=0?"+":"−") + Math.abs(v).toFixed(d).replace(".", ","); }
+function bandOf(t){ return t<10?1:t<15?2:t<20?3:t<25?4:5; }
+
+function addRow(t="", p=""){
+  const id = ++uid;
+  const r = document.createElement("div");
+  r.className = "srow"; r.setAttribute("role","row");
+  r.innerHTML = `<span class="n" role="cell"><i></i><b></b></span>
+    <span role="cell"><input type="text" inputmode="decimal" id="t${id}" aria-label="Temperatura en grados" value="${t}" placeholder="18"></span>
+    <span role="cell"><input type="text" inputmode="decimal" id="p${id}" aria-label="Ritmo en minutos por km" value="${p}" placeholder="5:10"></span>
+    <span role="cell"><button class="del" type="button" aria-label="Borrar carrera">×</button></span>`;
+  r.querySelector(".del").addEventListener("click", ()=>{ r.remove(); renumber(); edited(); });
+  r.querySelectorAll("input").forEach(i=>i.addEventListener("input", ()=>{ edited(); paintSwatch(r); }));
+  rowsEl.appendChild(r); renumber(); paintSwatch(r);
+}
+function paintSwatch(r){ const t = parseTemp(r.querySelector("input").value); r.querySelector(".n i").style.background = isNaN(t) ? "var(--grid)" : `var(${T[bandOf(t)]})`; }
+function renumber(){ [...rowsEl.children].forEach((r,i)=>r.querySelector(".n b").textContent = String(i+1).padStart(2,"0")); }
+function edited(){ if(isSample){ isSample=false; const c=document.getElementById("sample-tag"); c.textContent="Tus datos"; c.classList.add("mine"); } }
+
+function readRows(){
+  const pts = [];
+  [...rowsEl.children].forEach(r=>{
+    const [ti, pi] = r.querySelectorAll("input");
+    const t = parseTemp(ti.value), p = parsePace(pi.value);
+    const empty = !ti.value.trim() && !pi.value.trim();
+    ti.classList.toggle("bad", !empty && isNaN(t));
+    pi.classList.toggle("bad", !empty && isNaN(p));
+    if(!isNaN(t) && !isNaN(p)) pts.push({t,p});
+  });
+  return pts;
+}
+function stats(pts){
+  const n = pts.length, mx = pts.reduce((a,b)=>a+b.t,0)/n, my = pts.reduce((a,b)=>a+b.p,0)/n;
+  let sxy=0,sxx=0,syy=0;
+  pts.forEach(({t,p})=>{ sxy+=(t-mx)*(p-my); sxx+=(t-mx)**2; syy+=(p-my)**2; });
+  const slope = sxx>0 ? sxy/sxx : 0;
+  return {n, my, r:(sxx>0&&syy>0)?sxy/Math.sqrt(sxx*syy):0, slope, b:my-slope*mx};
+}
+function indexFrom(r){ return r<0.1?1:r<0.3?2:r<0.5?3:r<0.7?4:5; }
+function bestBand(pts){
+  const bands=[[-30,10,"<10 °C"],[10,15,"10-15 °C"],[15,20,"15-20 °C"],[20,25,"20-25 °C"],[25,60,">25 °C"]];
+  let best=null;
+  bands.forEach(([lo,hi,lab])=>{
+    const ps = pts.filter(x=>x.t>=lo&&x.t<hi).map(x=>x.p).sort((a,b)=>a-b);
+    if(ps.length<2) return;
+    const med = ps.length%2 ? ps[(ps.length-1)/2] : (ps[ps.length/2-1]+ps[ps.length/2])/2;
+    if(!best || med<best.med) best={lab,med};
+  });
+  return best;
+}
+function cssv(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+function setBlob(idx){
+  const blob = document.getElementById("blob");
+  // cuanto mas alto el indice, mas grande y mas caliente la mancha
+  const c = k => `var(--t${Math.max(1, idx - k)})`;
+  blob.style.setProperty("--c5", c(0)); blob.style.setProperty("--c4", c(1));
+  blob.style.setProperty("--c3", c(2)); blob.style.setProperty("--c2", c(3));
+  blob.style.setProperty("--size", idx ? (35 + idx*11) + "%" : "30%");
+  blob.style.opacity = idx ? .95 : .35;
+}
+
+function render(){
+  const pts = readRows(), warn = document.getElementById("warn");
+  document.getElementById("corner-n").textContent = "n = " + pts.length;
+  if(pts.length){
+    document.getElementById("corner-min").textContent = "mín " + Math.min(...pts.map(x=>x.t)) + " °C";
+    document.getElementById("corner-max").textContent = "máx " + Math.max(...pts.map(x=>x.t)) + " °C";
+  }
+  if(pts.length < 3){
+    document.getElementById("idx").textContent = "–";
+    document.getElementById("idx-name").textContent = "Mete al menos 8 carreras";
+    ["s-loss","s-r","s-best"].forEach(i=>document.getElementById(i).textContent="–");
+    document.getElementById("verdict").textContent = "";
+    warn.hidden = true; setBlob(0); drawPlot(pts,null); placeTrack(null,0); return;
+  }
+  const s = stats(pts), idx = indexFrom(s.r), loss = s.slope*5;
+  const range = Math.max(...pts.map(x=>x.t)) - Math.min(...pts.map(x=>x.t));
+  const msgs = [];
+  if(pts.length < 8) msgs.push(`Solo hay ${pts.length} carreras: con menos de 8 el índice es poco fiable.`);
+  if(range < 8) msgs.push(`Tus temperaturas solo varían ${range.toFixed(0)} °C. Añade días más fríos y más calurosos.`);
+  warn.textContent = msgs.join(" "); warn.hidden = !msgs.length;
+
+  document.getElementById("idx").textContent = idx;
+  document.getElementById("idx-name").textContent = NAMES[idx];
+  setBlob(idx);
+  document.getElementById("s-loss").textContent = num(loss,1);
+  document.getElementById("s-r").textContent = s.r.toFixed(2).replace(".", ",").replace("-", "−");
+  const bb = bestBand(pts);
+  document.getElementById("s-best").textContent = bb ? bb.lab : "–";
+
+  let v;
+  if(loss <= 0.5) v = `Tu ritmo casi no cambia con la temperatura (${fmtPace(s.my)}/km de media).`;
+  else v = `Por cada 5 °C más pierdes unos ${loss.toFixed(1).replace(".", ",")} s/km, un ${(loss/s.my*100).toFixed(1).replace(".", ",")} % de tu ritmo medio (${fmtPace(s.my)}/km). En un 10K a 25 °C frente a uno a 15 °C serían unos ${Math.round(loss*2*10)} segundos más.`;
+  if(bb) v += ` Donde mejor corres es a ${bb.lab}: ${fmtPace(bb.med)}/km de mediana.`;
+  document.getElementById("verdict").textContent = v;
+  drawPlot(pts, s); placeTrack(loss, idx);
+}
+
+function drawPlot(pts, s){
+  const svg = document.getElementById("plot"), W=540,H=300,L=58,R=14,Tp=14,B=42;
+  const grid = cssv("--grid"), dim = cssv("--dim"), ink = cssv("--ink");
+  const txt = (x,y,str,anchor="middle",extra="") => `<text x="${x}" y="${y}" text-anchor="${anchor}" fill="${dim}" font-family="Martian Mono, monospace" font-size="10" ${extra}>${str}</text>`;
+  if(!pts.length){ svg.innerHTML = txt(W/2,H/2,"Aquí aparecerán tus carreras"); return; }
+  let tmin = Math.floor(Math.min(...pts.map(x=>x.t))/5)*5, tmax = Math.ceil(Math.max(...pts.map(x=>x.t))/5)*5; if(tmax===tmin) tmax+=5;
+  let pmin = Math.floor(Math.min(...pts.map(x=>x.p))/15)*15, pmax = Math.ceil(Math.max(...pts.map(x=>x.p))/15)*15; if(pmax===pmin) pmax+=15;
+  const x = t => L + (t-tmin)/(tmax-tmin)*(W-L-R), y = p => Tp + (p-pmin)/(pmax-pmin)*(H-Tp-B);
+  let g = "";
+  for(let t=tmin;t<=tmax;t+=5) g += `<line x1="${x(t)}" x2="${x(t)}" y1="${Tp}" y2="${H-B}" stroke="${grid}"/>` + txt(x(t),H-B+16,t+"°");
+  const step = (pmax-pmin)>120?30:15;
+  for(let p=pmin;p<=pmax;p+=step) g += `<line x1="${L}" x2="${W-R}" y1="${y(p)}" y2="${y(p)}" stroke="${grid}"/>` + txt(L-8,y(p)+4,fmtPace(p),"end");
+  g += txt((L+W-R)/2, H-6, "TEMPERATURA");
+  g += txt(12,(Tp+H-B)/2,"RITMO · ABAJO MÁS LENTO","middle",`transform="rotate(-90 12 ${(Tp+H-B)/2})"`);
+  if(s){
+    const cl = v => Math.max(pmin, Math.min(pmax, v));
+    g += `<line x1="${x(tmin)}" y1="${y(cl(s.b+s.slope*tmin))}" x2="${x(tmax)}" y2="${y(cl(s.b+s.slope*tmax))}" stroke="${ink}" stroke-width="2" stroke-dasharray="2 5" stroke-linecap="round"/>`;
+  }
+  pts.forEach(pt=>{ g += `<circle cx="${x(pt.t)}" cy="${y(pt.p)}" r="6" fill="${cssv(T[bandOf(pt.t)])}" stroke="${cssv("--night")}" stroke-width="1.5"/>`; });
+  svg.innerHTML = g;
+}
+
+function placeTrack(loss, idx){
+  const lo = -2, hi = Math.max(10, loss!=null ? Math.ceil(loss+2) : 10);
+  const pos = v => 8 + (v-lo)/(hi-lo)*84; // % del ancho, deja hueco para el numero de calle
+  document.getElementById("r-elite").style.left = pos(ELITE.loss) + "%";
+  document.getElementById("r-pop").style.left = pos(POP.loss) + "%";
+  const you = document.getElementById("r-you"), tag = document.getElementById("you-tag");
+  if(loss==null){ you.style.left = pos(lo+.5)+"%"; tag.textContent = "Tú: sin datos"; }
+  else { you.style.left = pos(Math.max(lo, loss)) + "%"; tag.textContent = "Tú " + num(loss,1); document.getElementById("you-dot").style.background = `var(${T[idx]})`; }
+  const ax = document.getElementById("axis"); let a = "";
+  for(let v=Math.ceil(lo/2)*2; v<=hi; v+=2) a += `<span style="left:${pos(v)}%">${v>0?"+":""}${v}</span>`;
+  ax.innerHTML = a;
+
+  const stamp = document.getElementById("stamp"), txt = document.getElementById("am-text");
+  if(loss==null){ stamp.textContent="Sin datos"; stamp.style.color="var(--dim)"; txt.textContent="Mete tus carreras para ver dónde te colocas."; return; }
+  const l = loss.toFixed(1).replace(".", ",");
+  if(loss <= 1 || idx === 1){
+    stamp.textContent = "Piel de élite"; stamp.style.color = "var(--t5)";
+    txt.textContent = `Ante el calor eres de élite: pierdes ${l} s/km por cada 5 °C, casi lo mismo que los ganadores de Berlín y Londres (−0,3). Tu índice es ${idx}, como el suyo${idx===1?"":" o muy cerca"}.`;
+  } else if(loss <= POP.loss){
+    const pct = Math.round((loss-ELITE.loss)/(POP.loss-ELITE.loss)*100);
+    const closer = pct < 50 ? "más cerca de la élite" : "más cerca del corredor popular";
+    stamp.textContent = pct < 50 ? "Casi élite" : "Popular resistente"; stamp.style.color = pct < 50 ? "var(--t4)" : "var(--t3)";
+    txt.textContent = `Estás entre los dos, ${closer}: pierdes ${l} s/km por cada 5 °C. Si la élite es 0 y el corredor popular del estudio 100, tú estás en el ${pct}. No eres élite, pero el calor te afecta menos que a la media.`;
+  } else {
+    const ratio = loss/POP.loss;
+    const x = ratio < 1.15 ? "algo más que él" : ratio.toFixed(1).replace(".", ",") + " veces más que él";
+    stamp.textContent = "Corredor popular"; stamp.style.color = "var(--t2)"; stamp.style.filter = "brightness(1.6)";
+    txt.textContent = `El calor te afecta más que al corredor popular del estudio: pierdes ${l} s/km por cada 5 °C, ${x}, y muy lejos de la élite (−0,3). Los días de calor, baja el ritmo o sal temprano.`;
+    return;
+  }
+  stamp.style.filter = "";
+}
+
+document.getElementById("add").addEventListener("click", ()=>{ addRow(); edited(); rowsEl.lastElementChild.querySelector("input").focus(); });
+document.getElementById("clear").addEventListener("click", ()=>{ rowsEl.innerHTML=""; for(let i=0;i<8;i++) addRow(); edited(); render(); });
+document.getElementById("calc").addEventListener("click", render);
+document.getElementById("load").addEventListener("click", ()=>{
+  const lines = document.getElementById("paste").value.split(/\n/).map(l=>l.trim()).filter(Boolean);
+  let bad = 0; const good = [];
+  lines.forEach(l=>{
+    const parts = l.split(/[\s;\t|]+/).filter(Boolean);
+    const t = parseTemp(parts[0]), p = parsePace(parts[1]);
+    if(parts.length<2 || isNaN(t) || isNaN(p)){ bad++; return; }
+    good.push([parts[0].replace(",", "."), fmtPace(p)]);
+  });
+  const msg = document.getElementById("paste-msg");
+  if(!good.length){ msg.textContent = "No he podido leer ninguna línea. Formato: 18 5:12"; return; }
+  rowsEl.innerHTML = ""; good.forEach(([t,p])=>addRow(t,p)); edited();
+  msg.textContent = `${good.length} carreras cargadas` + (bad?`, ${bad} líneas ignoradas`:"") + ".";
+  render();
+});
+
+EXAMPLE.forEach(([t,p])=>addRow(t,p));
+render();
+</script>
+
+</body>
+</html>
