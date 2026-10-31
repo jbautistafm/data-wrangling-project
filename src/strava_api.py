@@ -40,3 +40,29 @@ def get_activities(token):
         print(f"pagina {page}: {len(datos)} actividades")
         page += 1
     return actividades
+def get_splits(token, activity_id):
+    # detalle de una carrera: me quedo con los splits de cada km
+    url = f"https://www.strava.com/api/v3/activities/{activity_id}"
+    headers = {"Authorization": f"Bearer {token}"}
+    while True:
+        r = requests.get(url, headers=headers)
+        if r.status_code == 429:
+            # limite de 200 cada 15 min, espero y repito
+            print("limite de strava, espero 15 min...")
+            time.sleep(15 * 60)
+            continue
+        r.raise_for_status()
+        break
+    splits = r.json().get("splits_metric", [])
+    for s in splits:
+        s["activity_id"] = activity_id  # para saber de que carrera es cada km
+    return splits
+def get_gear(token, gear_id):
+    # marca y modelo de unas zapatillas a partir de su id
+    url = f"https://www.strava.com/api/v3/gear/{gear_id}"
+    headers = {"Authorization": f"Bearer {token}"}
+    r = requests.get(url, headers=headers)
+    r.raise_for_status()
+    g = r.json()
+    return {"gear_id": gear_id, "marca": g.get("brand_name"), "modelo": g.get("model_name"),
+            "km_totales": round(g.get("distance", 0) / 1000)}
