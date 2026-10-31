@@ -1,0 +1,313 @@
+activity_id,fecha,year,mes,estacion,franja,km,minutos,ritmo_s_km,desnivel_m,pulso,es_competicion,temp,humedad,viento,lluvia,marca,modelo,tipo_zapa
+20764750642,2026-10-28 13:12:16,2026,10,otoño,tarde,8.01,45.1,337.8,32.0,145.6,False,,,,,Nike,Vomero Plus White,diario
+20504265525,2026-10-08 17:23:52,2026,10,otoño,tarde,7.01,37.0,316.3,48.0,141.6,False,18.7,36.0,18.6,0.0,Nike,Vomero Plus White,diario
+20431393258,2026-10-03 11:40:14,2026,10,otoño,mañana,7.14,42.2,354.8,28.0,130.7,False,27.9,53.0,3.8,0.0,Nike,Vomero Plus White,diario
+20300748441,2026-09-23 19:53:43,2026,9,otoño,tarde,6.01,33.6,335.9,19.0,126.8,False,31.0,15.0,6.0,0.0,Nike,Vomero Plus White,diario
+20245059346,2026-09-19 19:46:08,2026,9,otoño,tarde,7.0,40.1,343.6,28.0,135.5,False,27.0,28.0,5.7,0.0,Nike,Vomero Plus White,diario
+20120139077,2026-09-10 19:23:58,2026,9,otoño,tarde,4.46,23.8,320.4,23.0,135.6,False,25.9,14.0,8.4,0.0,Nike,Vomero Plus White,diario
+20055976440,2026-09-06 08:44:45,2026,9,otoño,mañana,6.07,33.4,330.3,32.0,136.2,False,25.7,33.0,5.4,0.0,Nike,Vomero Plus White,diario
+19958642076,2026-08-30 09:19:07,2026,8,verano,mañana,6.0,35.1,351.3,26.0,125.3,False,20.6,39.0,1.8,0.0,Nike,Vomero Plus White,diario
+19882103741,2026-08-24 19:45:33,2026,8,verano,tarde,6.01,32.7,326.6,29.0,134.7,False,25.0,39.0,19.5,0.0,Nike,Vomero Plus White,diario
+19747807709,2026-08-15 08:52:45,2026,8,verano,mañana,5.01,27.9,333.7,21.0,134.8,False,22.5,57.0,6.8,0.0,Nike,Vomero Plus White,diario
+19677195470,2026-08-10 08:41:38,2026,8,verano,mañana,4.0,22.3,334.2,18.0,135.9,False,23.0,28.0,5.2,0.0,Nike,Vomero Plus White,diario
+19586190848,2026-08-03 19:34:12,2026,8,verano,tarde,3.08,17.4,338.0,18.0,131.6,False,30.9,24.0,15.4,0.0,Nike,Vomero Plus White,diario
+19185237348,2026-07-05 08:48:53,2026,7,verano,mañana,12.0,65.6,327.8,66.0,132.4,False,25.0,42.0,6.9,0.0,Nike,Vomero Plus White,diario
+19133404024,2026-07-01 07:56:43,2026,7,verano,mañana,8.01,43.7,327.5,32.0,138.0,False,22.8,53.0,12.1,0.0,Nike,Vomero Plus White,diario
+18993148608,2026-06-20 09:33:24,2026,6,verano,mañana,7.01,39.3,336.2,30.0,143.6,False,25.6,47.0,8.3,0.0,Nike,Vomero Plus White,diario
+18947359258,2026-06-16 19:41:36,2026,6,verano,tarde,5.29,28.9,328.0,39.0,133.1,False,31.6,23.0,7.5,0.0,Nike,Vomero Plus White,diario
+18899183043,2026-06-13 09:09:25,2026,6,verano,mañana,6.0,32.8,328.5,27.0,138.2,False,23.8,25.0,9.3,0.0,Nike,Vomero Plus White,diario
+18847005283,2026-06-09 09:34:16,2026,6,verano,mañana,2.83,16.9,357.6,8.0,121.6,False,23.6,49.0,3.9,0.0,Nike,Vomero Plus White,diario
+18630816206,2026-05-24 08:33:05,2026,5,primavera,mañana,20.98,101.0,289.0,182.0,155.0,True,20.0,39.0,6.0,0.0,Nike,Zoom Fly 5,competicion
+18593740961,2026-05-21 12:36:36,2026,5,primavera,tarde,8.01,42.8,320.2,33.0,141.0,False,27.3,25.0,6.8,0.0,Nike,Vomero Plus White,diario
+18546480721,2026-05-17 17:43:09,2026,5,primavera,tarde,18.0,94.0,313.3,91.0,134.6,False,20.7,30.0,10.8,0.1,Nike,Vomero Plus White,diario
+18507116534,2026-05-14 18:53:44,2026,5,primavera,tarde,7.0,33.7,288.7,46.0,138.0,False,19.1,34.0,16.8,0.0,Nike,Vomero Plus White,diario
+18480812686,2026-05-12 19:04:49,2026,5,primavera,tarde,12.02,60.2,300.5,47.0,137.3,False,13.7,74.0,11.5,1.0,Nike,Vomero Plus White,diario
+18415167411,2026-05-07 18:19:21,2026,5,primavera,tarde,12.01,64.1,320.4,52.0,133.1,False,17.5,45.0,5.8,0.3,Nike,Vomero Plus White,diario
+18375598769,2026-05-04 19:34:02,2026,5,primavera,tarde,7.51,43.6,347.9,63.0,134.4,False,16.6,44.0,14.3,0.0,Nike,Vomero Plus White,diario
+18349650990,2026-05-02 18:18:27,2026,5,primavera,tarde,5.01,33.6,402.0,13.0,106.5,False,17.9,66.0,7.9,1.1,ASICS,Novablast 5,diario
+18308752979,2026-04-29 18:22:12,2026,4,primavera,tarde,6.55,35.8,327.9,44.0,127.2,False,16.7,70.0,7.5,0.0,Nike,Vomero Plus White,diario
+18295870640,2026-04-28 19:25:15,2026,4,primavera,tarde,5.01,34.1,408.6,14.0,119.4,False,23.6,30.0,10.8,0.0,ASICS,Novablast 5,diario
+18264783202,2026-04-26 09:18:48,2026,4,primavera,mañana,42.6,229.9,323.8,379.0,154.3,True,17.3,66.0,8.7,0.0,Nike,Vomero Plus White,diario
+18240995056,2026-04-24 18:01:15,2026,4,primavera,tarde,5.04,26.5,315.9,20.0,136.4,False,22.5,40.0,3.4,0.0,ASICS,Novablast 5,diario
+18186664807,2026-04-20 18:23:31,2026,4,primavera,tarde,8.02,42.1,315.1,30.0,136.5,False,26.3,19.0,9.5,0.0,ASICS,Novablast 5,diario
+18154570722,2026-04-18 09:59:19,2026,4,primavera,mañana,11.21,58.8,314.6,56.0,142.6,False,17.2,47.0,1.8,0.0,Nike,Vomero Plus White,diario
+18135086855,2026-04-16 18:29:41,2026,4,primavera,tarde,11.01,57.4,313.1,50.0,138.5,False,24.9,18.0,9.9,0.0,ASICS,Novablast 5,diario
+18090637074,2026-04-13 13:32:40,2026,4,primavera,tarde,8.02,44.5,332.9,31.0,125.3,False,13.1,34.0,12.4,0.0,ASICS,Novablast 5,diario
+18077510293,2026-04-12 12:30:01,2026,4,primavera,tarde,2.35,15.2,386.8,17.0,129.7,False,15.4,57.0,12.6,0.0,ASICS,Novablast 5,diario
+18045064968,2026-04-09 17:48:07,2026,4,primavera,tarde,30.01,170.9,341.8,175.0,143.0,False,25.0,23.0,9.2,0.0,Nike,Vomero Plus White,diario
+17971781987,2026-04-04 10:07:01,2026,4,primavera,mañana,15.04,80.2,320.0,72.0,143.5,False,14.6,46.0,6.2,0.0,Nike,Vomero Plus White,diario
+17831026548,2026-03-23 18:23:27,2026,3,primavera,tarde,13.02,68.4,315.2,38.0,141.6,False,15.7,27.0,11.4,0.0,ASICS,Novablast 5,diario
+17757561855,2026-03-17 18:13:34,2026,3,primavera,tarde,10.02,50.9,304.6,37.0,136.2,False,20.5,26.0,5.0,0.0,Nike,Vomero Plus White,diario
+17700669826,2026-03-12 18:24:57,2026,3,primavera,tarde,21.2,109.4,309.7,94.0,140.5,False,15.7,53.0,9.9,0.0,ASICS,Novablast 5,diario
+17676093878,2026-03-10 19:40:42,2026,3,primavera,tarde,1.05,4.0,230.5,5.0,161.1,False,10.4,79.0,3.4,0.0,Nike,Vomero Plus White,diario
+17676093219,2026-03-10 18:51:43,2026,3,primavera,tarde,9.77,47.7,292.7,42.2,136.7,False,12.0,62.0,2.3,0.0,Nike,Vomero Plus White,diario
+17645636839,2026-03-08 10:10:27,2026,3,primavera,mañana,14.54,79.1,326.5,59.0,135.6,False,7.7,85.0,6.1,0.2,ASICS,Novablast 5,diario
+17616453306,2026-03-05 18:36:52,2026,3,primavera,tarde,11.24,58.5,312.2,43.0,134.3,False,15.4,52.0,7.7,0.0,ASICS,Novablast 5,diario
+17562043206,2026-03-01 09:33:39,2026,3,primavera,mañana,18.01,96.5,321.4,89.0,123.5,False,7.3,88.0,2.2,0.0,Nike,Vomero Plus White,diario
+17518336332,2026-02-25 13:49:59,2026,2,invierno,tarde,11.34,62.2,329.0,37.0,124.9,False,16.2,47.0,4.0,0.0,ASICS,Novablast 5,diario
+17482027102,2026-02-22 09:35:52,2026,2,invierno,mañana,20.99,101.3,289.5,206.0,148.0,True,4.2,81.0,7.2,0.0,ASICS,Novablast 5,diario
+17453016219,2026-02-19 18:41:40,2026,2,invierno,tarde,7.01,38.7,331.1,7.0,159.9,False,9.5,45.0,16.7,0.0,Nike,Vomero Plus White,diario
+17385639119,2026-02-13 17:01:58,2026,2,invierno,tarde,6.01,29.0,289.4,26.0,124.1,False,9.4,73.0,21.8,0.0,ASICS,Novablast 5,diario
+17339014984,2026-02-09 13:19:36,2026,2,invierno,tarde,10.01,51.6,309.1,39.0,131.7,False,11.2,77.0,12.8,0.0,Nike,Vomero Plus White,diario
+17297957849,2026-02-05 18:25:23,2026,2,invierno,tarde,10.01,53.0,318.0,70.0,131.0,False,10.3,75.0,28.0,0.0,ASICS,Novablast 5,diario
+17274912573,2026-02-03 18:36:36,2026,2,invierno,tarde,12.01,59.3,296.3,67.0,135.3,False,6.6,76.0,14.8,0.1,Nike,Vomero Plus White,diario
+17247176272,2026-02-01 10:38:34,2026,2,invierno,mañana,8.43,42.0,299.1,33.0,135.3,False,6.2,93.0,9.0,0.0,ASICS,Novablast 5,diario
+17219138850,2026-01-29 18:01:56,2026,1,invierno,tarde,10.02,50.3,301.4,40.0,138.7,False,11.1,82.0,8.5,0.0,Nike,Vomero Plus White,diario
+17196482798,2026-01-27 18:07:45,2026,1,invierno,tarde,13.18,68.0,309.6,98.0,133.4,False,6.4,82.0,22.5,0.0,ASICS,Novablast 5,diario
+17125376901,2026-01-21 10:07:38,2026,1,invierno,mañana,12.58,66.9,319.2,117.0,133.9,False,4.2,95.0,14.7,0.1,ASICS,Novablast 5,diario
+17125361504,2026-01-21 09:39:00,2026,1,invierno,mañana,4.26,22.1,310.8,35.0,131.4,False,3.1,95.0,10.7,0.1,ASICS,Novablast 5,diario
+17090901496,2026-01-18 10:59:37,2026,1,invierno,mañana,11.24,61.4,327.7,46.0,122.0,False,3.0,88.0,9.9,0.0,ASICS,Novablast 5,diario
+17090894985,2026-01-18 10:21:09,2026,1,invierno,mañana,6.77,37.4,331.3,35.0,121.4,False,3.0,88.0,9.9,0.0,ASICS,Novablast 5,diario
+17060951651,2026-01-15 17:44:37,2026,1,invierno,tarde,3.18,20.1,378.6,12.0,107.1,False,8.0,77.0,11.4,0.0,ASICS,Novablast 5,diario
+17008979023,2026-01-11 09:20:34,2026,1,invierno,mañana,15.01,77.8,310.8,87.0,126.8,False,-0.6,91.0,2.2,0.0,Nike,Vomero Plus White,diario
+16953889281,2026-01-06 09:42:33,2026,1,invierno,mañana,14.01,67.8,290.4,95.0,133.8,False,-1.8,67.0,2.4,0.0,Nike,Vomero Plus White,diario
+16947146068,2026-01-05 18:03:03,2026,1,invierno,tarde,4.01,25.6,382.5,15.0,123.6,False,3.0,52.0,13.0,0.0,ASICS,Novablast 5,diario
+16931615804,2026-01-04 09:57:09,2026,1,invierno,mañana,10.0,51.8,310.6,28.0,132.8,False,6.1,96.0,10.1,0.3,ASICS,Novablast 5,diario
+16922584869,2026-01-03 12:38:45,2026,1,invierno,tarde,1.0,6.6,399.0,2.8,146.5,False,8.4,90.0,5.5,0.0,ASICS,Novablast 5,diario
+16922584857,2026-01-03 12:18:28,2026,1,invierno,tarde,1.01,6.3,376.2,6.0,160.7,False,8.4,90.0,5.5,0.0,ASICS,Novablast 5,diario
+16891549622,2025-12-31 09:11:42,2025,12,invierno,mañana,15.01,76.7,306.7,154.0,170.3,False,-0.8,95.0,5.7,0.0,Nike,Zoom Fly 5,competicion
+16852253414,2025-12-27 09:55:36,2025,12,invierno,mañana,17.0,90.0,317.5,61.0,137.1,False,1.4,96.0,11.6,0.0,ASICS,Novablast 5,diario
+16804688781,2025-12-21 17:06:04,2025,12,invierno,tarde,11.8,60.0,305.3,57.0,141.5,False,5.9,68.0,8.6,0.1,ASICS,Novablast 5,diario
+16767486670,2025-12-17 13:53:21,2025,12,invierno,tarde,10.01,49.7,297.8,68.0,149.9,False,12.5,66.0,10.2,0.0,ASICS,Novablast 5,diario
+16750467642,2025-12-15 17:44:53,2025,12,invierno,tarde,9.01,46.0,306.5,38.0,145.4,False,10.5,79.0,5.0,0.0,ASICS,Novablast 5,diario
+16715480284,2025-12-11 18:49:07,2025,12,invierno,tarde,6.01,41.3,412.6,21.0,108.5,False,9.5,79.0,3.3,0.0,ASICS,Novablast 5,diario
+16673369436,2025-12-07 09:48:49,2025,12,invierno,mañana,15.1,77.4,307.6,51.0,150.5,False,9.9,97.0,7.0,0.0,ASICS,Novablast 5,diario
+16630434846,2025-12-02 17:52:05,2025,12,invierno,tarde,8.02,39.0,291.9,27.0,149.5,False,9.3,59.0,6.6,0.0,ASICS,Novablast 5,diario
+16540710591,2025-11-23 09:19:57,2025,11,otoño,mañana,10.1,63.1,374.8,6.0,138.1,False,1.3,92.0,2.4,0.0,ASICS,Novablast 5,diario
+16492439707,2025-11-18 08:51:30,2025,11,otoño,mañana,6.01,40.0,399.0,23.0,131.9,False,4.9,92.0,4.2,0.0,ASICS,Novablast 5,diario
+16474804721,2025-11-16 12:32:24,2025,11,otoño,tarde,8.0,39.6,296.6,44.0,152.0,False,12.3,77.0,15.9,0.0,ASICS,Novablast 5,diario
+16392432756,2025-11-08 11:29:33,2025,11,otoño,mañana,7.0,47.8,410.1,17.0,122.5,False,11.2,62.0,10.1,0.0,ASICS,Novablast 5,diario
+16381449491,2025-11-07 08:10:12,2025,11,otoño,mañana,16.01,82.8,310.4,88.0,139.7,False,7.4,94.0,11.0,0.0,ASICS,Novablast 5,diario
+16363084370,2025-11-05 13:25:11,2025,11,otoño,tarde,10.01,52.3,313.4,55.0,139.6,False,16.1,61.0,11.7,1.4,ASICS,Novablast 5,diario
+16295022468,2025-10-29 18:43:57,2025,10,otoño,tarde,6.0,41.6,416.3,16.0,116.5,False,13.9,96.0,1.9,0.0,ASICS,Novablast 5,diario
+16283994302,2025-10-28 18:05:15,2025,10,otoño,tarde,6.01,31.6,316.0,27.0,135.3,False,17.0,43.0,0.6,0.0,ASICS,Novablast 5,diario
+16248688175,2025-10-25 09:22:09,2025,10,otoño,mañana,14.01,74.8,320.5,62.0,145.2,False,15.9,87.0,13.2,0.0,ASICS,Novablast 5,diario
+16178416785,2025-10-18 11:41:03,2025,10,otoño,mañana,6.01,40.0,398.8,19.0,114.4,False,17.4,49.0,1.5,0.0,ASICS,Novablast 5,diario
+16162435953,2025-10-16 19:20:00,2025,10,otoño,tarde,5.02,34.4,410.6,15.0,131.5,False,21.6,44.0,6.8,0.0,ASICS,Novablast 5,diario
+16161585155,2025-10-16 18:13:17,2025,10,otoño,tarde,6.01,30.5,304.5,28.0,140.7,False,21.9,48.0,4.6,0.0,ASICS,Novablast 5,diario
+16115696744,2025-10-12 11:56:35,2025,10,otoño,mañana,13.01,62.2,286.9,84.0,149.4,False,19.6,53.0,11.2,0.0,ASICS,Novablast 5,diario
+16066382896,2025-10-07 19:40:43,2025,10,otoño,tarde,5.01,24.7,296.2,17.0,144.1,False,26.1,30.0,7.1,0.0,ASICS,Novablast 5,diario
+16038072323,2025-10-05 09:10:02,2025,10,otoño,mañana,15.01,81.9,327.4,69.0,128.3,False,16.9,62.0,10.2,0.0,ASICS,Novablast 5,diario
+15989349950,2025-09-30 18:31:15,2025,9,otoño,tarde,11.01,56.9,309.9,44.0,138.4,False,23.5,38.0,1.3,0.0,ASICS,Novablast 5,diario
+15935025028,2025-09-25 19:40:55,2025,9,otoño,tarde,7.0,36.3,311.4,38.0,148.5,False,21.6,21.0,2.4,0.0,ASICS,Novablast 5,diario
+15884884314,2025-09-21 10:48:46,2025,9,otoño,mañana,4.01,21.6,322.9,16.0,149.8,False,21.3,55.0,7.0,0.0,ASICS,Novablast 5,diario
+15884231740,2025-09-21 08:50:20,2025,9,otoño,mañana,12.01,62.2,310.9,49.0,144.5,False,18.5,69.0,8.3,0.0,ASICS,Novablast 5,diario
+15822499767,2025-09-15 19:40:28,2025,9,otoño,tarde,5.01,32.1,384.8,23.0,114.8,False,31.3,19.0,8.5,0.0,ASICS,Novablast 5,diario
+15725300224,2025-09-07 09:04:30,2025,9,otoño,mañana,15.01,83.9,335.5,73.0,134.5,False,21.4,68.0,12.0,0.0,ASICS,Novablast 5,diario
+15697361954,2025-09-04 19:00:25,2025,9,otoño,tarde,5.01,28.4,340.5,17.0,135.7,False,27.3,19.0,13.1,0.0,ASICS,Novablast 5,diario
+15633745620,2025-08-30 09:01:18,2025,8,verano,mañana,13.01,67.3,310.4,121.0,139.8,False,20.9,55.0,1.5,0.0,ASICS,Novablast 5,diario
+15600721235,2025-08-27 06:59:44,2025,8,verano,mañana,7.01,38.2,326.5,9.0,130.5,False,23.6,55.0,4.4,0.0,ASICS,Novablast 5,diario
+15584421183,2025-08-25 20:37:15,2025,8,verano,noche,3.16,20.1,381.0,3.0,139.7,False,31.6,23.0,5.9,0.0,ASICS,Novablast 5,diario
+15584421034,2025-08-25 20:03:03,2025,8,verano,noche,6.36,30.1,284.0,6.0,155.7,False,31.6,23.0,5.9,0.0,ASICS,Novablast 5,diario
+15508051799,2025-08-19 06:25:24,2025,8,verano,mañana,6.01,32.0,319.0,3.0,129.5,False,21.3,35.0,4.8,0.0,ASICS,Novablast 5,diario
+15485861867,2025-08-17 08:52:03,2025,8,verano,mañana,6.01,40.4,402.8,0.0,106.5,False,26.0,29.0,5.1,0.0,ASICS,Novablast 5,diario
+15452656501,2025-08-14 07:40:38,2025,8,verano,mañana,8.01,42.7,320.1,12.0,134.8,False,23.2,62.0,3.6,0.0,ASICS,Novablast 5,diario
+15429035735,2025-08-12 07:55:23,2025,8,verano,mañana,8.02,43.0,321.9,20.0,128.1,False,24.7,46.0,1.0,0.0,ASICS,Novablast 5,diario
+15395500143,2025-08-09 09:29:33,2025,8,verano,mañana,7.0,35.9,308.0,15.0,133.7,False,22.9,74.0,3.7,0.0,ASICS,Novablast 5,diario
+15372823710,2025-08-07 07:26:11,2025,8,verano,mañana,11.21,55.8,298.8,11.0,142.6,False,19.9,99.0,6.1,0.0,ASICS,Novablast 5,diario
+15368156905,2025-08-06 19:41:21,2025,8,verano,tarde,5.02,35.2,421.1,6.0,123.7,False,25.2,63.0,13.7,0.0,ASICS,Novablast 5,diario
+15337393121,2025-08-04 07:15:15,2025,8,verano,mañana,8.01,43.4,325.0,35.0,146.3,False,23.2,43.0,7.8,0.0,ASICS,Novablast 5,diario
+15318078619,2025-08-02 18:34:05,2025,8,verano,tarde,3.05,20.0,394.1,3.6,110.6,False,30.4,72.0,12.1,0.0,New Balance,FuellCell Rebel,diario
+15216278929,2025-07-24 08:12:15,2025,7,verano,mañana,1.64,9.4,344.5,42.0,126.1,False,28.9,75.0,22.2,0.0,New Balance,FuellCell Rebel,diario
+15085681952,2025-07-12 08:05:09,2025,7,verano,mañana,12.01,63.0,314.7,29.0,140.8,False,18.9,66.0,7.6,0.0,ASICS,Novablast 5,diario
+15075578858,2025-07-11 07:11:40,2025,7,verano,mañana,7.01,36.6,313.3,60.4,141.9,False,21.3,54.0,8.8,0.0,ASICS,Novablast 5,diario
+15021965820,2025-07-06 08:36:50,2025,7,verano,mañana,13.01,72.9,336.3,63.8,129.0,False,23.0,54.0,4.6,0.0,Nike,Zoom Fly 5,competicion
+14918511917,2025-06-26 06:32:13,2025,6,verano,mañana,7.01,36.6,313.4,25.0,131.0,False,18.3,55.0,5.3,0.0,New Balance,FuellCell Rebel,diario
+14894199017,2025-06-23 21:18:58,2025,6,verano,noche,5.01,33.7,403.6,9.4,112.0,False,31.8,24.0,9.0,0.0,New Balance,FuellCell Rebel,diario
+14861900420,2025-06-20 17:53:10,2025,6,verano,tarde,10.01,57.1,342.3,48.2,142.8,False,36.1,15.0,8.4,0.0,New Balance,FuellCell Rebel,diario
+14789743064,2025-06-13 20:53:32,2025,6,verano,noche,6.01,37.0,369.7,28.4,120.4,False,26.3,40.0,4.8,0.0,New Balance,FuellCell Rebel,diario
+14773940835,2025-06-12 08:58:54,2025,6,verano,mañana,5.0,33.9,406.8,14.6,109.2,False,17.9,91.0,3.4,0.0,New Balance,FuellCell Rebel,diario
+14685276029,2025-06-03 18:14:03,2025,6,verano,tarde,10.0,57.8,346.6,78.6,129.8,False,23.7,34.0,11.9,0.0,New Balance,FuellCell Rebel,diario
+14654829717,2025-05-31 19:16:21,2025,5,primavera,tarde,5.01,26.9,322.6,20.6,146.8,False,,,,,New Balance,FuellCell Rebel,diario
+14649737419,2025-05-31 10:44:03,2025,5,primavera,mañana,5.01,33.2,398.2,44.8,121.7,False,26.9,33.0,3.5,0.0,New Balance,FuellCell Rebel,diario
+14602717648,2025-05-26 18:57:01,2025,5,primavera,tarde,6.09,45.1,444.3,71.2,118.2,False,27.9,28.0,14.3,0.0,New Balance,FuellCell Rebel,diario
+14586746177,2025-05-25 09:28:28,2025,5,primavera,mañana,1.04,5.4,312.5,0.0,147.3,False,19.3,44.0,2.9,0.0,New Balance,FuellCell Rebel,diario
+14586746065,2025-05-25 08:48:34,2025,5,primavera,mañana,7.2,39.5,329.2,98.4,138.5,False,16.0,57.0,4.1,0.0,New Balance,FuellCell Rebel,diario
+14562977638,2025-05-22 19:22:32,2025,5,primavera,tarde,6.01,32.0,319.6,31.8,145.4,False,22.8,25.0,11.1,0.0,New Balance,FuellCell Rebel,diario
+14517661402,2025-05-18 12:19:36,2025,5,primavera,tarde,5.01,34.0,406.8,43.2,117.9,False,23.9,36.0,3.6,0.0,New Balance,FuellCell Rebel,diario
+14506044499,2025-05-17 11:13:12,2025,5,primavera,mañana,6.0,33.3,333.2,54.6,144.6,False,19.9,43.0,2.8,0.0,New Balance,FuellCell Rebel,diario
+14459462554,2025-05-12 20:14:05,2025,5,primavera,noche,4.18,26.0,373.4,40.2,126.6,False,15.6,55.0,7.4,0.0,New Balance,FuellCell Rebel,diario
+14427546968,2025-05-09 18:11:43,2025,5,primavera,tarde,5.0,30.7,368.8,26.2,,False,17.0,53.0,12.9,0.0,New Balance,FuellCell Rebel,diario
+14357094337,2025-05-02 19:26:20,2025,5,primavera,tarde,4.2,29.6,423.3,43.4,113.9,False,16.9,70.0,2.1,0.0,New Balance,FuellCell Rebel,diario
+14282711021,2025-04-25 16:45:05,2025,4,primavera,tarde,2.74,16.1,351.8,42.2,123.0,False,24.1,35.0,17.5,0.0,New Balance,FuellCell Rebel,diario
+12385503653,2024-09-11 18:43:43,2024,9,otoño,tarde,10.01,48.2,289.2,82.2,154.9,False,27.4,14.0,16.9,0.0,New Balance,FuellCell Rebel,diario
+12371872881,2024-09-10 07:24:45,2024,9,otoño,mañana,10.0,46.7,280.2,83.6,146.2,False,15.1,76.0,13.3,0.0,Nike,Zoom Fly 5,competicion
+12355645660,2024-09-08 09:20:58,2024,9,otoño,mañana,15.02,76.0,303.8,101.0,131.3,False,18.4,47.0,4.7,0.0,Nike,Zoom Fly 5,competicion
+12342325040,2024-09-06 17:53:38,2024,9,otoño,tarde,6.01,30.8,307.2,32.2,140.0,False,24.4,19.0,20.7,0.0,New Balance,FuellCell Rebel,diario
+12334818331,2024-09-05 18:58:37,2024,9,otoño,tarde,10.01,50.6,303.1,77.4,139.0,False,26.2,29.0,12.5,0.0,New Balance,FuellCell Rebel,diario
+12164108182,2024-08-16 18:28:39,2024,8,verano,tarde,6.0,36.7,367.2,67.2,131.8,False,22.6,79.0,9.4,0.0,New Balance,FuellCell Rebel,diario
+12160010067,2024-08-16 08:14:44,2024,8,verano,mañana,10.01,46.0,275.4,86.8,136.3,False,17.6,80.0,6.2,0.0,New Balance,FuellCell Rebel,diario
+12151471701,2024-08-15 08:34:13,2024,8,verano,mañana,14.0,67.8,290.8,151.0,137.8,False,16.6,84.0,9.1,0.0,New Balance,FuellCell Rebel,diario
+12151471784,2024-08-14 16:53:16,2024,8,verano,tarde,3.39,17.6,312.4,37.6,147.0,False,21.8,56.0,17.8,0.0,New Balance,FuellCell Rebel,diario
+12137918968,2024-08-13 17:27:10,2024,8,verano,tarde,6.11,37.0,363.5,71.2,115.6,False,19.5,90.0,19.8,0.4,New Balance,FuellCell Rebel,diario
+12133612565,2024-08-13 07:22:26,2024,8,verano,mañana,8.02,39.3,294.0,104.6,132.1,False,18.2,88.0,14.0,0.0,New Balance,FuellCell Rebel,diario
+12098393303,2024-08-08 21:10:59,2024,8,verano,noche,3.44,25.9,451.5,84.2,108.3,False,34.2,14.0,7.3,0.0,New Balance,FuellCell Rebel,diario
+12089440450,2024-08-07 20:22:45,2024,8,verano,noche,12.26,62.2,304.5,91.4,142.7,False,35.4,12.0,12.0,0.0,New Balance,FuellCell Rebel,diario
+12071193576,2024-08-05 19:45:29,2024,8,verano,tarde,13.0,62.3,287.5,99.4,154.9,False,36.7,13.0,17.4,0.0,Nike,Vaporfly 3 Fast track,competicion
+12057747401,2024-08-04 09:07:50,2024,8,verano,mañana,3.37,25.9,461.4,77.6,121.7,False,26.7,36.0,10.9,0.0,New Balance,FuellCell Rebel,diario
+12057747440,2024-08-04 08:00:25,2024,8,verano,mañana,12.41,60.4,292.0,77.4,145.2,False,24.3,37.0,13.0,0.0,New Balance,FuellCell Rebel,diario
+12041637242,2024-08-02 08:02:26,2024,8,verano,mañana,10.01,47.1,282.4,80.0,140.8,False,23.3,45.0,4.0,0.0,New Balance,FuellCell Rebel,diario
+12041637049,2024-08-01 15:22:02,2024,8,verano,tarde,3.51,17.7,302.0,0.0,150.7,False,,,,,New Balance,FuellCell Rebel,diario
+12015791490,2024-07-30 07:23:00,2024,7,verano,mañana,10.1,49.8,296.1,88.2,136.5,False,23.7,47.0,10.5,0.0,New Balance,FuellCell Rebel,diario
+12011896489,2024-07-29 19:01:49,2024,7,verano,tarde,6.01,28.7,286.5,51.0,146.3,False,33.2,23.0,3.8,0.0,New Balance,FuellCell Rebel,diario
+11932768036,2024-07-20 08:36:38,2024,7,verano,mañana,12.01,63.6,317.5,89.6,131.6,False,24.3,36.0,7.0,0.0,New Balance,FuellCell Rebel,diario
+11930606484,2024-07-19 19:45:09,2024,7,verano,tarde,6.01,29.4,293.3,39.2,140.0,False,34.7,16.0,14.3,0.0,New Balance,FuellCell Rebel,diario
+11921222278,2024-07-18 18:58:19,2024,7,verano,tarde,10.01,49.4,296.4,118.6,144.7,False,34.0,16.0,13.6,0.0,New Balance,FuellCell Rebel,diario
+11907772202,2024-07-17 07:00:12,2024,7,verano,mañana,12.51,62.7,300.8,107.8,143.3,False,17.9,57.0,10.8,0.0,New Balance,FuellCell Rebel,diario
+11904603157,2024-07-16 20:01:23,2024,7,verano,noche,10.0,50.3,301.8,110.4,146.6,False,27.3,19.0,6.1,0.0,New Balance,FuellCell Rebel,diario
+11875108872,2024-07-13 08:32:01,2024,7,verano,mañana,14.0,66.4,284.6,116.4,146.0,False,20.7,55.0,10.9,0.0,Nike,Zoom Fly 5,competicion
+11865026262,2024-07-11 19:53:42,2024,7,verano,tarde,14.0,67.0,286.9,131.6,155.4,False,32.2,29.0,20.9,0.0,New Balance,FuellCell Rebel,diario
+11843216758,2024-07-09 07:05:36,2024,7,verano,mañana,10.01,50.4,301.9,79.6,138.1,False,19.1,62.0,9.7,0.0,New Balance,FuellCell Rebel,diario
+11835046599,2024-07-08 07:06:00,2024,7,verano,mañana,12.58,60.0,286.2,154.8,138.0,False,17.1,55.0,2.9,0.0,New Balance,FuellCell Rebel,diario
+11803952738,2024-07-04 07:07:44,2024,7,verano,mañana,10.62,51.8,292.8,95.0,136.4,False,19.9,47.0,11.3,0.0,New Balance,FuellCell Rebel,diario
+11792515329,2024-07-02 19:08:01,2024,7,verano,tarde,10.0,52.0,311.9,81.4,139.8,False,28.9,29.0,18.1,0.0,New Balance,FuellCell Rebel,diario
+11777282071,2024-06-30 19:19:15,2024,6,verano,tarde,8.01,38.3,286.8,61.2,140.6,False,23.9,44.0,11.3,0.0,New Balance,FuellCell Rebel,diario
+11772305358,2024-06-30 08:24:49,2024,6,verano,mañana,15.01,76.8,307.0,105.4,126.9,False,17.0,84.0,7.3,0.0,New Balance,FuellCell Rebel,diario
+11749675756,2024-06-27 08:04:15,2024,6,verano,mañana,10.03,49.5,296.1,71.2,135.0,False,19.9,60.0,4.2,0.3,New Balance,FuellCell Rebel,diario
+11738293337,2024-06-25 19:59:19,2024,6,verano,tarde,10.02,46.2,276.8,124.6,158.0,False,29.5,35.0,9.7,0.0,New Balance,FuellCell Rebel,diario
+11729787332,2024-06-24 19:38:44,2024,6,verano,tarde,6.01,32.8,327.5,76.6,132.3,False,30.9,32.0,9.8,0.0,New Balance,FuellCell Rebel,diario
+11717368408,2024-06-23 09:00:32,2024,6,verano,mañana,10.09,39.6,235.7,52.6,171.9,True,20.0,59.0,6.6,0.0,Nike,Zoom Fly 5,competicion
+11709531803,2024-06-22 09:05:49,2024,6,verano,mañana,5.01,23.7,283.4,31.2,147.1,False,22.1,46.0,3.1,0.0,New Balance,FuellCell Rebel,diario
+11702619347,2024-06-21 08:04:44,2024,6,verano,mañana,8.01,41.6,311.6,69.0,129.7,False,15.9,69.0,5.0,0.0,New Balance,FuellCell Rebel,diario
+11690736919,2024-06-19 17:54:04,2024,6,verano,tarde,10.01,46.7,279.7,77.2,148.8,False,21.8,38.0,7.8,0.0,New Balance,FuellCell Rebel,diario
+11662987113,2024-06-16 08:08:50,2024,6,verano,mañana,16.01,81.0,303.4,102.2,130.1,False,17.4,41.0,5.5,0.0,New Balance,FuellCell Rebel,diario
+11655372003,2024-06-15 08:42:58,2024,6,verano,mañana,15.01,73.7,294.5,159.0,138.6,False,16.9,54.0,7.4,0.0,New Balance,FuellCell Rebel,diario
+11655371956,2024-06-13 19:28:58,2024,6,verano,tarde,3.59,27.2,454.3,50.6,108.3,False,25.1,25.0,17.9,0.0,New Balance,FuellCell Rebel,diario
+11640859175,2024-06-13 08:08:53,2024,6,verano,mañana,10.01,50.7,304.0,84.2,137.9,False,14.5,60.0,8.4,0.0,New Balance,FuellCell Rebel,diario
+11629264087,2024-06-11 19:30:21,2024,6,verano,tarde,11.23,55.4,296.0,143.4,142.3,False,23.0,34.0,8.6,0.0,New Balance,FuellCell Rebel,diario
+11621189798,2024-06-10 19:23:58,2024,6,verano,tarde,10.02,48.4,289.5,84.0,141.9,False,19.6,59.0,7.4,0.0,New Balance,FuellCell Rebel,diario
+11608940503,2024-06-09 08:45:06,2024,6,verano,mañana,16.01,73.9,277.0,129.6,157.2,False,17.5,74.0,12.6,0.0,New Balance,FuellCell Rebel,diario
+11593537716,2024-06-07 07:59:06,2024,6,verano,mañana,10.01,52.3,313.6,73.4,146.1,False,21.1,45.0,12.6,0.0,New Balance,FuellCell Rebel,diario
+11582625700,2024-06-05 19:38:10,2024,6,verano,tarde,4.0,20.8,312.0,49.0,144.4,False,30.0,25.0,6.5,0.0,New Balance,FuellCell Rebel,diario
+11573803917,2024-06-04 19:37:36,2024,6,verano,tarde,10.01,49.9,298.9,130.4,152.1,False,28.9,28.0,6.0,0.0,New Balance,FuellCell Rebel,diario
+11519259092,2024-05-28 19:05:32,2024,5,primavera,tarde,15.01,73.8,295.1,182.6,153.0,False,28.2,27.0,6.5,0.0,New Balance,FuellCell Rebel,diario
+11499083815,2024-05-26 08:54:50,2024,5,primavera,mañana,12.02,58.2,290.3,105.8,145.4,False,16.1,52.0,2.6,0.0,New Balance,FuellCell Rebel,diario
+11491524719,2024-05-25 09:00:37,2024,5,primavera,mañana,10.0,49.9,299.4,91.6,137.2,False,18.7,44.0,2.3,0.0,New Balance,FuellCell Rebel,diario
+11457193028,2024-05-20 18:42:26,2024,5,primavera,tarde,4.98,24.5,294.8,28.8,135.4,False,15.6,65.0,23.2,1.3,New Balance,FuellCell Rebel,diario
+11444864886,2024-05-19 08:31:27,2024,5,primavera,mañana,25.0,126.5,303.6,165.8,136.7,False,12.0,62.0,9.9,0.0,New Balance,FuellCell Rebel,diario
+11426015864,2024-05-16 18:44:03,2024,5,primavera,tarde,14.1,68.4,291.1,127.6,148.9,False,16.1,38.0,22.9,0.0,ASICS,Novablast 4,diario
+11409977307,2024-05-14 18:13:29,2024,5,primavera,tarde,10.99,54.1,295.3,108.8,138.4,False,17.6,36.0,13.8,0.0,ASICS,Novablast 4,diario
+11396049310,2024-05-12 19:21:59,2024,5,primavera,tarde,16.1,78.9,294.2,147.4,145.7,False,24.4,36.0,6.5,0.0,ASICS,Novablast 4,diario
+11377301923,2024-05-10 14:56:41,2024,5,primavera,tarde,9.03,43.2,286.9,56.4,148.5,False,27.8,21.0,10.0,0.0,ASICS,Novablast 4,diario
+11366532983,2024-05-09 08:03:52,2024,5,primavera,mañana,10.55,48.0,273.0,88.2,151.6,False,13.4,65.0,8.6,0.0,Nike,Zoom Fly 5,competicion
+11360816679,2024-05-08 13:57:08,2024,5,primavera,tarde,12.15,58.4,288.3,104.2,146.7,False,21.2,25.0,8.4,0.0,ASICS,Novablast 4,diario
+11335480253,2024-05-05 08:59:51,2024,5,primavera,mañana,18.01,90.7,302.3,127.0,137.6,False,13.1,90.0,17.0,0.0,ASICS,Novablast 4,diario
+11327548238,2024-05-04 09:24:56,2024,5,primavera,mañana,12.02,59.4,296.4,113.0,140.8,False,13.6,65.0,10.7,0.0,ASICS,Novablast 4,diario
+11314958342,2024-05-02 13:58:36,2024,5,primavera,tarde,3.35,25.9,463.6,23.6,99.4,False,13.5,39.0,14.7,0.0,ASICS,Novablast 4,diario
+11300671355,2024-04-30 18:22:45,2024,4,primavera,tarde,20.0,100.3,300.9,173.0,140.4,False,15.6,47.0,19.9,0.0,ASICS,Novablast 4,diario
+11280698449,2024-04-28 08:54:59,2024,4,primavera,mañana,15.0,79.7,318.7,208.6,131.2,False,7.8,83.0,2.3,0.0,ASICS,Novablast 4,diario
+11263259715,2024-04-25 19:18:43,2024,4,primavera,tarde,16.01,82.9,310.6,136.4,135.4,False,16.9,28.0,14.8,0.0,ASICS,Novablast 4,diario
+11248665735,2024-04-23 19:53:26,2024,4,primavera,tarde,3.18,26.0,491.2,45.2,117.0,False,16.1,28.0,19.6,0.0,ASICS,Novablast 4,diario
+11248665784,2024-04-23 17:21:44,2024,4,primavera,tarde,10.01,46.4,278.0,81.6,153.4,False,17.0,27.0,18.1,0.0,ASICS,Novablast 4,diario
+11240468222,2024-04-22 18:49:06,2024,4,primavera,tarde,14.02,67.8,290.1,172.4,146.2,False,17.0,26.0,21.8,0.0,ASICS,Novablast 4,diario
+11229283275,2024-04-21 10:16:48,2024,4,primavera,mañana,3.59,32.6,544.0,29.2,98.3,False,17.3,58.0,2.9,0.0,ASICS,Novablast 4,diario
+11207698737,2024-04-18 07:55:40,2024,4,primavera,mañana,10.02,47.3,283.1,77.8,143.8,False,7.5,72.0,11.7,0.0,ASICS,Novablast 4,diario
+11204589834,2024-04-17 19:18:10,2024,4,primavera,tarde,11.8,59.0,299.9,100.0,139.5,False,20.2,46.0,2.9,0.0,ASICS,Novablast 4,diario
+11158224502,2024-04-11 13:59:20,2024,4,primavera,tarde,10.01,49.3,295.4,88.4,148.2,False,22.2,45.0,3.3,0.0,ASICS,Novablast 4,diario
+11149372254,2024-04-10 14:09:51,2024,4,primavera,tarde,10.0,54.3,325.8,78.8,129.8,False,17.9,41.0,3.9,0.0,ASICS,Novablast 4,diario
+11126364697,2024-04-07 09:20:42,2024,4,primavera,mañana,21.2,92.5,261.7,178.2,168.5,True,15.0,77.0,13.8,0.0,Nike,Zoom Fly 5,competicion
+11112561130,2024-04-05 17:28:10,2024,4,primavera,tarde,5.02,24.4,291.2,26.8,147.0,False,23.1,36.0,13.3,0.0,ASICS,Novablast 4,diario
+11092841127,2024-04-02 19:52:44,2024,4,primavera,tarde,9.61,48.8,304.7,91.4,144.1,False,12.1,70.0,6.6,0.0,ASICS,Novablast 4,diario
+11078507083,2024-03-31 18:25:33,2024,3,primavera,tarde,20.01,95.6,286.8,138.8,146.0,False,8.9,72.0,23.6,0.5,ASICS,Novablast 4,diario
+11070931651,2024-03-30 17:34:50,2024,3,primavera,tarde,7.27,31.5,260.0,62.0,157.7,False,8.5,74.0,16.2,0.9,Nike,Zoom Fly 5,competicion
+11054049578,2024-03-28 10:10:56,2024,3,primavera,mañana,14.2,74.8,316.0,115.8,143.5,False,9.8,75.0,25.0,0.0,ASICS,Novablast 4,diario
+11043219072,2024-03-26 17:51:24,2024,3,primavera,tarde,11.05,54.6,296.7,99.2,137.5,False,9.4,44.0,22.4,0.0,ASICS,Novablast 4,diario
+11030805127,2024-03-24 18:18:59,2024,3,primavera,tarde,20.06,99.9,298.9,174.6,143.8,False,22.2,37.0,11.6,0.0,ASICS,Novablast 4,diario
+11022663851,2024-03-23 16:13:07,2024,3,primavera,tarde,13.0,69.9,322.5,100.8,135.1,False,25.0,36.0,11.2,0.0,ASICS,Novablast 4,diario
+11003235988,2024-03-20 20:12:27,2024,3,primavera,noche,10.01,50.9,305.0,98.8,147.5,False,13.8,88.0,13.1,0.0,ASICS,Novablast 4,diario
+10994858080,2024-03-19 18:21:14,2024,3,primavera,tarde,10.12,51.7,306.6,87.6,146.6,False,21.9,47.0,5.4,0.0,ASICS,Novablast 4,diario
+10977238597,2024-03-17 09:40:03,2024,3,primavera,mañana,18.27,96.2,316.0,147.2,130.9,False,11.1,85.0,5.8,0.0,ASICS,Novablast 4,diario
+10965887441,2024-03-15 17:11:57,2024,3,primavera,tarde,10.27,51.5,300.7,79.6,140.1,False,17.8,54.0,10.3,0.0,ASICS,Novablast 4,diario
+10959721277,2024-03-14 18:13:05,2024,3,primavera,tarde,10.11,48.4,287.0,88.2,142.8,False,14.2,65.0,16.1,0.0,ASICS,Novablast 4,diario
+10945154756,2024-03-12 18:19:23,2024,3,primavera,tarde,12.54,60.8,291.1,107.0,143.9,False,14.9,50.0,3.0,0.0,ASICS,Novablast 4,diario
+10927951655,2024-03-10 09:30:46,2024,3,primavera,mañana,10.1,40.2,238.5,101.0,154.1,True,5.2,95.0,22.2,0.0,Nike,Zoom Fly 5,competicion
+10920793816,2024-03-09 09:07:39,2024,3,primavera,mañana,5.02,23.5,280.7,35.6,142.3,False,5.3,91.0,17.3,0.1,ASICS,Novablast 4,diario
+10904677163,2024-03-06 18:40:44,2024,3,primavera,tarde,11.01,51.8,282.0,94.2,149.8,False,12.9,51.0,5.8,0.0,ASICS,Novablast 4,diario
+10879933432,2024-03-03 10:11:12,2024,3,primavera,mañana,16.08,82.8,308.8,126.0,135.7,False,4.3,74.0,17.7,0.0,ASICS,Novablast 4,diario
+10868319226,2024-03-01 17:01:36,2024,3,primavera,tarde,1.01,5.6,335.6,4.6,133.7,False,,,,,Nike,Zoom Fly 5,competicion
+10868319200,2024-03-01 16:33:25,2024,3,primavera,tarde,5.01,19.1,228.5,36.4,170.3,False,,,,,Nike,Zoom Fly 5,competicion
+10868319156,2024-03-01 16:11:38,2024,3,primavera,tarde,2.0,11.2,334.5,11.0,130.0,False,,,,,ASICS,Novablast 4,diario
+10849095842,2024-02-27 17:30:01,2024,2,invierno,tarde,10.0,45.8,275.0,98.6,152.8,False,9.7,45.0,19.4,0.0,ASICS,Novablast 4,diario
+10842319611,2024-02-26 19:05:46,2024,2,invierno,tarde,8.0,41.5,311.5,76.2,129.5,False,6.6,76.0,17.3,0.1,ASICS,Novablast 4,diario
+10831938566,2024-02-25 09:53:37,2024,2,invierno,mañana,6.0,31.6,316.0,134.2,135.9,False,9.8,87.0,28.5,0.6,ASICS,Novablast 4,diario
+10802243111,2024-02-20 18:53:15,2024,2,invierno,tarde,2.67,15.1,339.7,26.0,137.4,False,16.6,56.0,4.3,0.0,ASICS,Novablast 4,diario
+10802243564,2024-02-20 18:17:17,2024,2,invierno,tarde,5.57,25.0,268.9,30.0,158.9,False,,,,,Nike,Zoom Fly 5,competicion
+10802243459,2024-02-20 17:55:41,2024,2,invierno,tarde,2.01,11.0,328.9,7.2,127.7,False,,,,,ASICS,Novablast 4,diario
+10795198741,2024-02-19 18:32:46,2024,2,invierno,tarde,10.02,48.5,290.5,77.4,142.2,False,16.5,64.0,3.3,0.0,ASICS,Novablast 4,diario
+10785331080,2024-02-18 09:54:06,2024,2,invierno,mañana,15.0,77.6,310.4,99.6,135.8,False,3.8,78.0,8.4,0.0,ASICS,Novablast 4,diario
+10774053814,2024-02-16 16:15:42,2024,2,invierno,tarde,10.45,52.1,299.0,85.8,140.6,False,15.8,47.0,4.3,0.0,ASICS,Novablast 4,diario
+10755377578,2024-02-13 18:06:53,2024,2,invierno,tarde,15.03,75.8,302.8,135.4,138.9,False,14.9,81.0,11.3,0.0,ASICS,Novablast 4,diario
+10739541269,2024-02-11 10:07:05,2024,2,invierno,mañana,18.0,94.6,315.3,139.8,138.8,False,3.7,90.0,12.0,0.0,ASICS,Novablast 4,diario
+10722518988,2024-02-08 17:50:57,2024,2,invierno,tarde,11.41,56.2,295.7,94.0,146.0,False,11.6,56.0,19.6,0.0,ASICS,Novablast 4,diario
+10712902664,2024-02-07 07:56:27,2024,2,invierno,mañana,10.75,57.2,319.3,99.6,136.3,False,6.0,99.0,10.2,0.0,ASICS,Novablast 4,diario
+10709307177,2024-02-06 17:52:59,2024,2,invierno,tarde,12.02,62.7,313.1,97.2,138.9,False,14.9,56.0,11.0,0.0,ASICS,Novablast 4,diario
+10675724940,2024-02-01 18:00:38,2024,2,invierno,tarde,10.03,47.2,282.5,70.6,146.3,False,13.4,67.0,5.9,0.0,ASICS,Novablast 4,diario
+10669366302,2024-01-31 18:12:26,2024,1,invierno,tarde,14.0,76.5,327.9,96.4,133.4,False,10.5,85.0,3.8,0.0,ASICS,Novablast 4,diario
+10661829841,2024-01-30 17:35:05,2024,1,invierno,tarde,12.01,63.5,317.3,98.6,140.2,False,13.5,66.0,5.0,0.0,ASICS,Novablast 4,diario
+10645964687,2024-01-28 10:46:13,2024,1,invierno,mañana,20.05,104.3,312.1,139.6,138.5,False,6.1,86.0,6.2,0.0,ASICS,Novablast 4,diario
+10634234615,2024-01-26 17:45:02,2024,1,invierno,tarde,1.47,9.4,384.4,13.0,132.2,False,17.6,64.0,3.2,0.0,ASICS,Novablast 4,diario
+10634234566,2024-01-26 17:03:54,2024,1,invierno,tarde,5.71,26.8,282.1,27.8,153.0,False,,,,,Nike,Zoom Fly 5,competicion
+10634234462,2024-01-26 16:38:25,2024,1,invierno,tarde,3.03,15.9,314.9,7.0,126.4,False,,,,,ASICS,Novablast 4,diario
+10628248895,2024-01-25 18:02:07,2024,1,invierno,tarde,13.23,68.2,309.2,113.8,136.4,False,15.4,68.0,3.7,0.0,ASICS,Novablast 4,diario
+10608718517,2024-01-22 18:08:10,2024,1,invierno,tarde,14.37,73.8,308.1,109.2,139.1,False,10.6,77.0,6.3,0.0,ASICS,Novablast 4,diario
+10602062713,2024-01-21 14:32:04,2024,1,invierno,tarde,17.01,91.7,323.4,119.4,140.1,False,10.9,66.0,3.6,0.0,ASICS,Novablast 4,diario
+10588490386,2024-01-19 14:12:25,2024,1,invierno,tarde,7.01,37.8,324.0,42.2,,False,6.2,86.0,24.1,4.3,Nike,Pegasus Trail 3,trail
+10571024493,2024-01-16 18:06:36,2024,1,invierno,tarde,7.75,49.4,382.8,93.0,123.3,False,13.8,62.0,15.4,0.0,ASICS,Novablast 4,diario
+10564973501,2024-01-15 19:16:35,2024,1,invierno,tarde,11.54,59.6,310.1,102.4,133.1,False,12.9,94.0,17.9,0.2,ASICS,Novablast 4,diario
+10555363134,2024-01-14 10:43:42,2024,1,invierno,mañana,10.01,47.3,283.5,79.4,154.0,False,5.1,96.0,0.8,0.0,ASICS,Novablast 4,diario
+10542558743,2024-01-12 10:41:50,2024,1,invierno,mañana,10.0,47.7,286.0,87.2,153.8,False,-0.3,80.0,8.7,0.0,ASICS,Novablast 4,diario
+10522927677,2024-01-09 09:07:40,2024,1,invierno,mañana,14.0,71.1,304.7,118.8,144.7,False,1.0,92.0,3.2,0.0,ASICS,Novablast 4,diario
+10509999570,2024-01-07 09:36:20,2024,1,invierno,mañana,15.0,79.6,318.6,112.8,138.1,False,-0.8,94.0,5.4,0.0,ASICS,Novablast 4,diario
+10504160913,2024-01-06 11:42:59,2024,1,invierno,mañana,10.02,47.7,285.4,79.2,148.8,False,5.2,66.0,16.5,0.0,ASICS,Novablast 4,diario
+10493857446,2024-01-04 18:04:22,2024,1,invierno,tarde,11.02,51.2,278.8,85.3,146.9,False,9.1,97.0,3.3,0.2,ASICS,Novablast 4,diario
+10480704537,2024-01-02 17:56:25,2024,1,invierno,tarde,7.74,47.7,369.6,111.8,133.9,False,9.1,84.0,9.9,0.0,Nike,Pegasus Trail 3,trail
+10466469377,2023-12-31 09:38:14,2023,12,invierno,mañana,17.03,84.5,297.6,126.2,142.0,False,7.0,98.0,15.5,0.0,Nike,Pegasus Trail 3,trail
+10457126597,2023-12-29 16:17:09,2023,12,invierno,tarde,8.03,42.8,319.4,74.2,140.5,False,7.9,81.0,2.2,0.0,Nike,Pegasus Trail 3,trail
+10452158828,2023-12-28 18:30:20,2023,12,invierno,tarde,7.99,33.4,251.1,65.0,160.9,True,6.5,77.0,3.5,0.0,Nike,Zoom Fly 5,competicion
+10433512079,2023-12-25 09:32:44,2023,12,invierno,mañana,15.01,84.2,336.8,117.8,127.9,False,-1.4,94.0,4.2,0.0,Nike,Pegasus Trail 3,trail
+10429517292,2023-12-24 12:05:56,2023,12,invierno,tarde,7.02,34.6,296.2,54.4,146.6,False,7.4,71.0,1.8,0.0,Nike,Pegasus Trail 3,trail
+10420136539,2023-12-22 14:46:38,2023,12,invierno,tarde,18.03,88.3,293.7,136.4,144.5,False,12.0,50.0,4.7,0.0,Nike,Pegasus Trail 3,trail
+10404725955,2023-12-19 13:51:38,2023,12,invierno,tarde,10.0,48.0,287.8,98.2,153.1,False,9.9,52.0,2.5,0.0,Nike,Pegasus Trail 3,trail
+10454301694,2023-12-17 09:03:37,2023,12,invierno,mañana,9.96,40.0,241.0,77.2,160.6,True,-0.9,92.0,6.1,0.0,Nike,Zoom Fly 5,competicion
+10387751890,2023-12-16 10:31:04,2023,12,invierno,mañana,5.01,24.9,298.6,42.6,144.1,False,2.1,89.0,6.1,0.0,Nike,Pegasus Trail 3,trail
+10369843832,2023-12-12 19:08:53,2023,12,invierno,tarde,1.02,5.5,324.5,26.0,145.1,False,11.8,95.0,15.8,0.0,Nike,Zoom Fly 5,competicion
+10369844055,2023-12-12 18:30:18,2023,12,invierno,tarde,8.03,36.8,274.6,68.2,150.6,False,11.6,95.0,13.0,0.1,Nike,Zoom Fly 5,competicion
+10357170006,2023-12-10 09:54:19,2023,12,invierno,mañana,17.02,84.5,297.9,153.4,148.2,False,10.2,100.0,6.2,0.0,Nike,Pegasus Trail 3,trail
+10338787619,2023-12-06 17:48:08,2023,12,invierno,tarde,5.78,32.7,339.3,74.2,132.2,False,9.5,69.0,2.3,0.0,Nike,Pegasus Trail 3,trail
+10333230175,2023-12-05 18:03:10,2023,12,invierno,tarde,6.46,29.8,276.8,49.8,150.5,False,6.9,65.0,7.7,0.0,Nike,Zoom Fly 5,competicion
+10317600814,2023-12-02 16:28:05,2023,12,invierno,tarde,6.02,30.8,306.8,50.0,138.1,False,10.4,52.0,10.6,0.0,Nike,Pegasus Trail 3,trail
+10311961844,2023-12-01 16:18:49,2023,12,invierno,tarde,15.01,72.3,289.1,112.2,148.2,False,10.8,44.0,16.7,0.0,Nike,Pegasus Trail 3,trail
+10289549890,2023-11-27 13:18:26,2023,11,otoño,tarde,1.02,4.2,248.0,18.4,148.7,False,10.9,78.0,10.2,0.0,Nike,Zoom Fly 5,competicion
+10289549914,2023-11-27 13:02:35,2023,11,otoño,tarde,3.04,12.0,236.2,14.2,150.9,False,10.9,78.0,10.2,0.0,Nike,Zoom Fly 5,competicion
+10282994845,2023-11-26 09:37:41,2023,11,otoño,mañana,10.03,47.4,283.6,57.6,150.4,False,2.7,94.0,8.0,0.0,Nike,Pegasus Trail 3,trail
+10274455664,2023-11-24 16:45:16,2023,11,otoño,tarde,6.73,35.4,315.2,109.8,136.3,False,16.0,42.0,2.4,0.0,Nike,Pegasus Trail 3,trail
+10263826080,2023-11-22 17:59:46,2023,11,otoño,tarde,6.74,39.1,347.9,112.8,131.6,False,12.6,51.0,13.8,0.0,Nike,Pegasus Trail 3,trail
+10252315518,2023-11-20 18:04:30,2023,11,otoño,tarde,5.02,22.1,263.7,59.8,152.9,False,14.3,68.0,12.8,0.0,Nike,Zoom Fly 5,competicion
+10252315054,2023-11-16 17:24:19,2023,11,otoño,tarde,7.74,46.2,358.1,118.0,133.9,False,16.5,79.0,5.2,0.0,Nike,Winflo 7,diario
+10218106735,2023-11-14 18:15:46,2023,11,otoño,tarde,7.46,34.9,280.4,92.0,152.0,False,12.7,89.0,8.7,0.0,Nike,Zoom Fly 5,competicion
+10203847953,2023-11-12 09:02:01,2023,11,otoño,mañana,10.1,43.2,256.5,23.0,167.2,True,11.6,99.0,16.4,0.0,Nike,Zoom Fly 5,competicion
+10197482622,2023-11-11 09:01:03,2023,11,otoño,mañana,5.03,24.2,288.1,42.2,144.9,False,13.0,99.0,20.9,0.0,Nike,Zoom Fly 5,competicion
+10181143426,2023-11-07 17:09:32,2023,11,otoño,tarde,4.06,17.4,257.1,30.2,150.8,False,10.5,65.0,9.3,0.0,Nike,Zoom Fly 5,competicion
+10176862332,2023-11-06 18:37:44,2023,11,otoño,tarde,7.42,35.3,285.4,60.2,149.0,False,9.9,60.0,9.5,0.0,Nike,Zoom Fly 5,competicion
+10176812915,2023-11-02 18:31:16,2023,11,otoño,tarde,8.01,41.4,310.4,79.0,137.9,False,10.6,64.0,17.7,0.0,,sin zapatilla,sin dato
+10176812907,2023-10-31 13:28:48,2023,10,otoño,tarde,10.04,46.7,279.2,56.3,154.2,False,13.0,67.0,1.3,0.0,Nike,Zoom Fly 5,competicion
+10176812632,2023-10-29 09:32:22,2023,10,otoño,mañana,6.04,30.8,306.0,56.8,149.7,False,13.2,83.0,17.7,0.0,,sin zapatilla,sin dato
+10176863619,2023-10-26 18:32:57,2023,10,otoño,tarde,3.02,16.0,318.2,9.4,136.3,False,14.9,94.0,25.1,1.3,,sin zapatilla,sin dato
+10176863858,2023-10-24 18:28:27,2023,10,otoño,tarde,10.02,49.0,293.7,123.6,158.1,False,12.7,77.0,15.8,0.0,,sin zapatilla,sin dato
+10176863932,2023-10-17 18:23:38,2023,10,otoño,tarde,7.02,34.8,297.6,47.4,147.5,False,21.9,53.0,25.9,0.0,,sin zapatilla,sin dato
+10176864068,2023-10-16 19:30:32,2023,10,otoño,tarde,8.01,39.9,298.9,72.6,152.7,False,18.0,72.0,3.9,0.0,,sin zapatilla,sin dato
+7551891506,2022-07-30 10:24:50,2022,7,verano,mañana,2.74,15.6,340.9,32.0,,False,27.8,48.0,11.6,0.0,,sin zapatilla,sin dato
+7546447805,2022-07-29 07:31:36,2022,7,verano,mañana,4.11,23.8,347.7,37.8,,False,21.6,53.0,1.6,0.0,,sin zapatilla,sin dato
+7529847179,2022-07-26 09:09:08,2022,7,verano,mañana,5.02,27.1,323.7,31.8,,False,25.2,46.0,9.7,0.0,,sin zapatilla,sin dato
+7469236968,2022-07-14 20:16:34,2022,7,verano,noche,4.55,27.0,356.7,49.2,,False,36.3,12.0,9.8,0.0,,sin zapatilla,sin dato
+5575547007,2021-07-04 19:34:02,2021,7,verano,tarde,5.4,28.9,320.7,50.7,,False,29.1,30.0,15.3,0.0,,sin zapatilla,sin dato
+5486206401,2021-06-17 19:01:26,2021,6,verano,tarde,3.64,20.2,332.4,17.6,,False,21.1,52.0,11.0,0.0,,sin zapatilla,sin dato
+5444897351,2021-06-10 09:20:55,2021,6,verano,mañana,4.31,24.0,334.1,27.2,,False,23.2,49.0,11.5,0.0,,sin zapatilla,sin dato
+5421394144,2021-06-06 09:24:16,2021,6,verano,mañana,4.57,24.9,327.1,38.9,,False,17.2,81.0,4.7,0.0,,sin zapatilla,sin dato
+5402144344,2021-06-02 19:40:39,2021,6,verano,tarde,5.31,30.0,338.6,33.1,,False,24.1,39.0,11.6,0.0,,sin zapatilla,sin dato
+5202844333,2021-04-27 19:05:49,2021,4,primavera,tarde,4.14,22.8,330.7,16.3,,False,16.0,67.0,7.6,0.2,,sin zapatilla,sin dato
+4174825541,2020-10-10 10:36:58,2020,10,otoño,mañana,4.87,25.6,315.4,33.7,,False,17.1,65.0,16.5,0.0,,sin zapatilla,sin dato
+4073354273,2020-09-17 16:43:00,2020,9,otoño,tarde,4.78,25.2,315.9,37.4,,False,25.4,48.0,12.6,0.0,,sin zapatilla,sin dato
+4044915001,2020-09-11 19:26:55,2020,9,otoño,tarde,3.71,19.7,318.3,22.0,,False,27.8,29.0,6.3,0.0,,sin zapatilla,sin dato
+4030827748,2020-09-08 19:01:06,2020,9,otoño,tarde,4.72,25.0,317.8,25.6,,False,23.8,29.0,5.3,0.0,,sin zapatilla,sin dato
+4001933943,2020-09-02 19:15:26,2020,9,otoño,tarde,4.51,24.3,323.1,25.7,,False,26.7,26.0,4.8,0.0,,sin zapatilla,sin dato
