@@ -115,7 +115,7 @@ data-wrangling-project/
 ## Enlaces
 
 - Tablero de Trello: https://trello.com/b/9gKDPVWY/data-wrangling-proyect
-- Slides de la presentación: _(pendiente de añadir)_
+- Slides de la presentación: https://docs.google.com/presentation/d/1h23rBtCd28P2LlKN4bCKq5zKODI--J9wtZM7plETv5A/edit?usp=sharing
 - Calculadora web: https://jbautistafm.github.io/data-wrangling-project/
 - Fuentes: [API de Strava](https://developers.strava.com/docs/reference/) · [Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api) · [Ganadores de Berlín](https://en.wikipedia.org/wiki/List_of_winners_of_the_Berlin_Marathon) · [Ganadores de Londres](https://en.wikipedia.org/wiki/List_of_winners_of_the_London_Marathon)
 
